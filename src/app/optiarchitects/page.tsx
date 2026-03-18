@@ -306,7 +306,7 @@ export default function OptiArchitectsPage() {
           {/* Header */}
           <AnimatedSection className="text-center mb-4 sm:mb-6">
             <h1 className="font-heading text-3xl sm:text-4xl md:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-amber-300 via-yellow-300 to-orange-400 bg-clip-text text-transparent">
-              Website OptiArchitects
+              OptiArchitects
             </h1>
           </AnimatedSection>
 
