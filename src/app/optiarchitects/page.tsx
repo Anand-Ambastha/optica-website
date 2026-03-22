@@ -68,17 +68,32 @@ const contentMaintainers: Maintainer[] = [
   },
 ];
 
+const codeMaintainers: Maintainer[] = [
+  {
+    name: "Aastha Gupta",
+    role: "Code & Development",
+    title: "Code Maintainer",
+    image: "/maintainers/aastha.jpeg",
+    linkedin: "https://www.linkedin.com/in/aastha-gupta-b1b31732a/",
+    instagram: "https://www.instagram.com/aasthagupta_.01",
+  },
+];
+
 const roleColors: Record<string, string> = {
   "Lead Developer": "from-amber-400 via-yellow-400 to-orange-400",
   "Design & Creative": "from-purple-400 to-blue-400",
   "Content & Documentation": "from-orange-400 to-pink-400",
+  "Code & Development": "from-green-400 to-cyan-400",
 };
 
-// All maintainers combined for horizontal row (lead in center)
+// All maintainers combined for horizontal row (lead in center - position 3 of 6)
 const allMaintainers: Maintainer[] = [
-  ...designMaintainers,
+  designMaintainers[0],
+  codeMaintainers[0],
   leadMaintainer,
-  ...contentMaintainers,
+  designMaintainers[1],
+  contentMaintainers[0],
+  contentMaintainers[1],
 ];
 
 function AnimatedSection({
@@ -366,6 +381,22 @@ export default function OptiArchitectsPage() {
                 </h2>
                 <div className="grid grid-cols-2 gap-3 max-w-md mx-auto">
                   {contentMaintainers.map((maintainer, index) => (
+                    <MaintainerCard
+                      key={maintainer.name}
+                      maintainer={maintainer}
+                      index={index}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* Code & Development */}
+              <div>
+                <h2 className="font-heading text-lg sm:text-xl font-bold text-center bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent mb-4">
+                  Code & Development
+                </h2>
+                <div className="max-w-xs mx-auto">
+                  {codeMaintainers.map((maintainer, index) => (
                     <MaintainerCard
                       key={maintainer.name}
                       maintainer={maintainer}
