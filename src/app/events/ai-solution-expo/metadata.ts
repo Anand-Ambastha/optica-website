@@ -13,12 +13,12 @@ const getBaseUrl = () => {
 const siteUrl = getBaseUrl();
 
 export const metadata: Metadata = {
-  title: "AI Conclave - The AI Hackathon | BVP Optica",
+  title: "AI Solution Expo - The AI Hackathon | BVP Optica",
   description:
-    "Join AI Conclave, a multidisciplinary AI hackathon by BVP Optica. Solve real-world challenges in Environment, Healthcare, and Fintech. Win prizes up to ₹5,000!",
+    "Join AI Solution Expo, a multidisciplinary AI hackathon by R&D CELL, BVCOE X BVP Optica. Solve real-world challenges in Environment, Healthcare, and Fintech. Win prizes up to ₹5,000!",
   keywords: [
+    "AI Solution Expo",
     "AI Hackathon",
-    "AI Conclave",
     "BVP Optica",
     "BVCOE hackathon",
     "artificial intelligence competition",
@@ -29,28 +29,28 @@ export const metadata: Metadata = {
     "fintech AI",
   ],
   openGraph: {
-    title: "AI Conclave - The AI Hackathon | BVP Optica",
+    title: "AI Solution Expo - The AI Hackathon | BVP Optica",
     description:
-      "A multidisciplinary AI hackathon solving real-world challenges in Environment, Healthcare, and Fintech. Feb 14-18, 2026.",
-    url: `${siteUrl}/events/ai-conclave`,
+      "A multidisciplinary AI hackathon solving real-world challenges in Environment, Healthcare, and Fintech. Mar 21 - Apr 14, 2026.",
+    url: `${siteUrl}/events/ai-solution-expo`,
     type: "website",
     images: [
       {
-        url: `${siteUrl}/events/ai-conclave-og.png`,
+        url: `${siteUrl}/events/ai-solution-expo-og.png`,
         width: 1200,
         height: 630,
-        alt: "AI Conclave - BVP Optica AI Hackathon",
+        alt: "AI Solution Expo - BVP Optica AI Hackathon",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Conclave - The AI Hackathon | BVP Optica",
+    title: "AI Solution Expo - The AI Hackathon | BVP Optica",
     description:
-      "Join AI Conclave by BVP Optica. Solve challenges in Environment, Healthcare & Fintech. Win ₹5,000!",
-    images: [`${siteUrl}/events/ai-conclave-og.jpg`],
+      "Join AI Solution Expo by R&D CELL, BVCOE X BVP Optica. Solve challenges in Environment, Healthcare & Fintech. Win ₹5,000!",
+    images: [`${siteUrl}/events/ai-solution-expo-og.png`],
   },
   alternates: {
-    canonical: `${siteUrl}/events/ai-conclave`,
+    canonical: `${siteUrl}/events/ai-solution-expo`,
   },
 };

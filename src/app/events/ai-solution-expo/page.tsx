@@ -1275,7 +1275,7 @@ export default function AIConclaveEvent() {
                 <Icons.Zap className="w-4 h-4 sm:w-5 sm:h-5" />
               </motion.span>
               <span className="text-xs sm:text-sm font-medium text-purple-300 tracking-[0.15em] sm:tracking-[0.2em]">
-                BVP OPTICA
+                R&D CELL, BVCOE X BVP OPTICA
               </span>
             </motion.div>
 
