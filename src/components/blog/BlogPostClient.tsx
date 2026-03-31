@@ -401,6 +401,7 @@ export default function BlogPostClient({
                   src={post.coverImage}
                   alt={post.title}
                   fill
+                  sizes="100vw"
                   className="object-cover"
                   priority
                 />
@@ -473,6 +474,7 @@ export default function BlogPostClient({
                             src={rp.coverImage}
                             alt={rp.title}
                             fill
+                            sizes="(max-width: 768px) 100vw, 33vw"
                             className="object-cover group-hover:scale-105 transition-transform duration-500"
                           />
                         ) : (
